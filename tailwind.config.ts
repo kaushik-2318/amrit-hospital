@@ -1,6 +1,5 @@
 import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
-import tailwindcssMotion from 'tailwindcss-motion';
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -15,5 +14,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [nextui(), tailwindcssMotion],
+  plugins: [nextui()],
 } satisfies Config;
