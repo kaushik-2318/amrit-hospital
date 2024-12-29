@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
+import { RobotoCondensed } from "../utils/customFont"
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/system";
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={`${fontSans.variable} flex justify-center items-center font-sans antialiased cursor-default select-none`}>
+      <body className={`${fontSans.variable} ${RobotoCondensed.variable} flex justify-center items-center font-sans antialiased cursor-default select-none`}>
         <div className="min-h-screen max-w-screen-2xl w-full">
           <NextUIProvider>
             {children}

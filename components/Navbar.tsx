@@ -65,7 +65,7 @@ export default function App() {
 
     return (
         <>
-            <div className="grid grid-cols-4 sm:grid-cols-12 border-b-2 pt-2 pb-2 duration-200">
+            <div className="grid grid-cols-4 sm:grid-cols-12 border-b-2 pt-2 pb-2 duration-200 fixed w-full backdrop-blur-lg">
 
                 <div className="grid col-start-1 col-end-4 sm:col-end-4 sm:grid-cols-3">
                     <div className="col-start-1 col-end-2 justify-center items-center flex sm:hidden">
@@ -91,14 +91,14 @@ export default function App() {
                     ))}
                 </div>
 
-                <div className="col-start-5 col-end-10 sm:flex justify-center items-center gap-6 uppercase hidden">
-                    <div>Home</div>
-                    <div>Blog</div>
-                    <div>Contact Us</div>
+                <div className="col-start-5 col-end-10 sm:flex justify-center items-center gap-6 uppercase hidden text-[#071836]">
+                    <div className="cursor-pointer hover:text-blue-600 hover:scale-110 duration-200">Home</div>
+                    <div className="cursor-pointer hover:text-blue-600 hover:scale-110 duration-200">Blog</div>
+                    <div className="cursor-pointer hover:text-blue-600 hover:scale-110 duration-200">Contact Us</div>
                 </div>
 
                 <div className="col-start-4 col-end-5 sm:col-start-11 sm:col-end-13 flex justify-center items-center gap-6 mx-2">
-                    <Button className="sm:w-40 text-wrap text-center p-2 text-xs sm:text-sm py-6 rounded-lg" as={Link} color="primary" href="#" variant="flat">Book an Appointment</Button>
+                    <Button className="sm:w-40 text-center p-2 text-xs sm:text-sm py-6 bg-blue-500 text-white text-wrap" as={Link} href="#" color="primary">Book an Appointment</Button>
                 </div>
 
             </div>

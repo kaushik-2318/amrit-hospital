@@ -12,6 +12,9 @@ export default {
     './node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js'
   ],
   theme: {
+    fontFamily: {
+      RobotoCondensed: ["var(--font-robotocondensed)"],
+    },
     extend: {},
   },
   plugins: [nextui()],
